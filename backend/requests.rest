@@ -1,0 +1,16 @@
+POST http://localhost:3003/partner
+Content-Type: application/json
+
+{
+    "name": "Carlos Henrique",
+    "lastname": "Rodrigues",
+    "participation": 90
+}
+
+
+###
+DELETE http://localhost:3003/partner/e3bc8fa8-9c14-47ff-b4c7-13f149fde2f2
+
+
+###
+GET  http://localhost:3003/partners
