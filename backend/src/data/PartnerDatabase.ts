@@ -1,5 +1,3 @@
-import knex from "knex";
-import { type } from "os";
 import { Partner } from "../model/Partner";
 import { BaseDatabase } from "./BaseDatabase";
 

@@ -9,7 +9,7 @@ Content-Type: application/json
 
 
 ###
-DELETE http://localhost:3003/partner/eef7ba87-9396-4d55-a347-790b0f5e9562
+DELETE http://localhost:3003/partner/e3bc8fa8-9c14-47ff-b4c7-13f149fde2f2
 
 
 ###
