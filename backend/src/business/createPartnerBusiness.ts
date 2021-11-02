@@ -3,11 +3,11 @@ import { Partner } from "../model/Partner";
 import { IdGenerator } from "../services/IdGenerator";
 
 export const createPartnerBusiness = async ({
-  name,
+  firstname,
   lastname,
   participation,
 }: any) => {
-  if (!name || !lastname || !participation) {
+  if (!firstname || !lastname || !participation) {
     throw new Error("Preencha todos os campos corretamente");
   }
 
@@ -26,7 +26,7 @@ export const createPartnerBusiness = async ({
     throw new Error("Participação total ultrapassa 100%.");
   }
 
-  const partner = new Partner(id, name, lastname, participation);
+  const partner = new Partner(id, firstname, lastname, participation);
   await partnerDabatase.createPartner(partner);
 
   return partner;
