@@ -10,7 +10,7 @@ export const deletePartner = async (req: Request, res: Response) => {
       .status(200)
       .send({
         message: "Parceiro removido",
-        parceiro: `${partnerToRemove.getName()} ${partnerToRemove.getLastname()}`,
+        parceiro: `${partnerToRemove.getFirstname()} ${partnerToRemove.getLastname()}`,
       });
   } catch (error) {
     res.status(400).send({ error: error.message });

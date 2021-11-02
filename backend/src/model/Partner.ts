@@ -1,7 +1,7 @@
 export class Partner {
   constructor(
     private id: string,
-    private name: string,
+    private firstname: string,
     private lastname: string,
     private participation: number
   ) {}
@@ -10,8 +10,8 @@ export class Partner {
     return this.id;
   }
 
-  getName() {
-    return this.name;
+  getFirstname() {
+    return this.firstname;
   }
 
   getLastname() {
@@ -26,8 +26,8 @@ export class Partner {
     this.id = id;
   }
 
-  setName(name: string) {
-    this.name = name;
+  setFirstname(firstname: string) {
+    this.firstname = firstname;
   }
 
   setLastname(lastname: string) {
@@ -45,7 +45,7 @@ export class Partner {
   static toPartnerModel(partner: any): Partner {
     return new Partner(
       partner.id,
-      partner.name,
+      partner.firstname,
       partner.lastname,
       partner.participation
     );

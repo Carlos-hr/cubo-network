@@ -7,7 +7,7 @@ export class PartnerDatabase extends BaseDatabase {
   public async createPartner(partner: Partner) {
     await BaseDatabase.connection(table).insert({
       id: partner.getId(),
-      name: partner.getName(),
+      firstname: partner.getFirstname(),
       lastname: partner.getLastname(),
       participation: partner.getParticipation(),
     });
