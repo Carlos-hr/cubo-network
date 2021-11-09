@@ -2,7 +2,8 @@ import { useContext, useState } from "react";
 import GlobalStateContext from "../../global/GlobalStateContext";
 import useForm from "../../hooks/useForm";
 import { createPartner } from "../../services/partner";
-import { Button, Input, Main } from "./styled";
+import Error from "../Error/Error";
+import { Button, ErrorContainer, Form, Input, Main } from "./styled";
 
 const Header = () => {
   const { getPartners } = useContext(GlobalStateContext);
@@ -11,17 +12,23 @@ const Header = () => {
     lastname: "",
     participation: "",
   });
-  
+
   const [error, setError] = useState(false);
 
+  const showError = () => {
+    if (error) {
+      return <Error />;
+    }
+  };
   const onSubmit = (e) => {
     e.preventDefault();
     createPartner(form, clear, setError, getPartners);
   };
 
   return (
-    <form onSubmit={onSubmit}>
-      <Main>
+    // <div>
+    <Main>
+      <Form onSubmit={onSubmit}>
         <Input
           placeholder="First name"
           type="text"
@@ -48,8 +55,11 @@ const Header = () => {
           required
         />
         <Button type="submit">SEND</Button>
-      </Main>
-    </form>
+      </Form>
+      <ErrorContainer>
+        {showError()}
+      </ErrorContainer>
+    </Main>
   );
 };
 
