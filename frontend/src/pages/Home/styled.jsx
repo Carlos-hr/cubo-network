@@ -11,6 +11,15 @@ export const Dashboard = styled.div`
   align-items: center;
   width: 100%;
   margin-top: 15vh;
+
+  @media screen and (max-width: 722px) {
+    height: fit-content;
+    flex-direction: column;
+  }
+
+  @media screen and (max-width: 768px) {
+    justify-content: space-between;
+  }
 `;
 
 export const ProgressContainer = styled.div`
