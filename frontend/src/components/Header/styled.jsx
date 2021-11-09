@@ -4,16 +4,31 @@ import { primary } from "../../constants/colors";
 export const Main = styled.div`
   height: 23vh;
   width: 100vw;
+  background-color: ${primary};
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`;
+
+export const Form = styled.form`
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   padding-left: 10%;
   align-items: center;
   justify-items: center;
   column-gap: 1vw;
-  background-color: ${primary};
-  box-sizing: border-box;
 `;
-
+export const ErrorContainer = styled.div`
+  margin-top: 2vh;
+  justify-self: end;
+  align-self: center;
+  background-color: #f8d7da;
+  border-radius: 5px;
+  box-shadow: 1px 1px 1px  gray;
+  padding-right: 2vw;
+  padding-left: 2vw;
+  color: maroon;
+`;
 export const Input = styled.input`
   border: none;
   height: 9vh;

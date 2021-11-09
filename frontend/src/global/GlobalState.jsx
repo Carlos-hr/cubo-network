@@ -1,16 +1,20 @@
-import { BASE_URL } from "../constants/url"
-import useRequestData from "../hooks/useRequestData"
-import GlobalStateContext from "./GlobalStateContext"
+import { BASE_URL } from "../constants/url";
+import useRequestData from "../hooks/useRequestData";
+import GlobalStateContext from "./GlobalStateContext";
 
 const GlobalState = (props) => {
-    const {data: partners} = useRequestData(`${BASE_URL}/partners`, [])
-    const data = {partners}
+  const { data: partners, getData: getPartners } = useRequestData(
+    `${BASE_URL}/partners`,
+    null
+  );
 
-    return (
-        <GlobalStateContext.Provider value={data}>
-            {props.children}
-        </GlobalStateContext.Provider>
-    )
-}
+  const data = { partners, getPartners };
 
-export default GlobalState
+  return (
+    <GlobalStateContext.Provider value={data}>
+      {props.children}
+    </GlobalStateContext.Provider>
+  );
+};
+
+export default GlobalState;

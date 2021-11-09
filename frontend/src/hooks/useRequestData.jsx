@@ -8,10 +8,14 @@ const useRequestData = (url, inititalState) => {
     axios
       .get(url)
       .then((res) => {
-        setData(res.data);
+        if (res.data.length === 0) {
+          setData(false);
+        } else {
+          setData(res.data);
+        }
       })
-      .catch((err) => {
-        console.log(err.message);
+      .catch(() => {
+        setData(false)
       });
   }, [url]);
 
