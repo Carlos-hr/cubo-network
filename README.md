@@ -8,21 +8,36 @@
 <p>Criação de API própria, com auxilio de bibliotecas para o tratamento de dados sensíveis, criação de id e manipulação do banco de dados SQL.</p>
 Foram criados os endpoints [`POST /partner`], [`GET /partners`], [`DELETE /partner/{partner_id}`], com o intuito respectivamente de criar, acessar e deletar parceiros.
 
+
+### Front-end:
+Consumo dos endpoints criados com auxilio do axios, para criação de uma página única com uso de ReactJs e styled-components além de utilização de bibliotecas externas para criação de gráfico e progress bar.
 ## :books: Bibliotecas utilizadas 
-  <li>Axios</li>
-  <li>React Router</li>
-  <li>Chakra UI</li>
-  <li>React Multi-carousel</li>
+
+### Back-end:
+  <li>Cors</li>
   <li>Dotenv</li>
+  <li>Express</li>
+  <li>Jsonwebtoken</li>
+  <li>Knex</li>
+  <li>MySQL</li>
+  <li>uuid</li>
 
-## 🚀 Instalando Case Promobit
+### Front-end:
+  <li>React-progress-bar</li>
+  <li>Axios</li>
+  <li>Randomcolor</li>
+  <li>React-chartjs-2</li>
+  <li>React-router</li>
+  <li>Styled-components</li>
+  
+## 🚀 Instalando Case Cubo-network
 
-Para instalar o Case promobit, siga estas etapas:
+Para instalar o Case cubo-network, siga estas etapas:
 
 Faça o clone desse repositório em seu computador e execute o comando:
 
 `npm install` e `npm run start`.
 
 ## Página da aplicação
-<a href="http://www.case-promobit.surge.sh">Case Promobit </a> 
+<a href="http://www.case-cubo-network.surge.sh">Case Cubo </a> 
 
