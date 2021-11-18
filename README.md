@@ -6,7 +6,7 @@
 
 ### Back-end: 
 <p>Criação de API própria, com auxilio de bibliotecas para o tratamento de dados sensíveis, criação de id e manipulação do banco de dados SQL.</p>
-Foram criados os endpoints [`POST /partner`], [`GET /partners`], [`DELETE /partner/{partner_id}`], com o intuito respectivamente de criar, acessar e deletar parceiros.
+Foram criados os endpoints `POST /partner`, [`GET /partners`], [`DELETE /partner/{partner_id}`], com o intuito respectivamente de criar, acessar e deletar parceiros.
 
 
 ### Front-end:
@@ -30,7 +30,7 @@ Consumo dos endpoints criados com auxilio do axios, para criação de uma págin
   <li>React-router</li>
   <li>Styled-components</li>
   
-## 🚀 Instalando Case Cubo-network
+## 🚀 Instalando Cubo-network
 
 Para instalar o Case cubo-network, siga estas etapas:
 
