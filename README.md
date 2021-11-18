@@ -6,7 +6,7 @@
 
 ### Back-end: 
 <p>Criação de API própria, com auxilio de bibliotecas para o tratamento de dados sensíveis, criação de id e manipulação do banco de dados SQL.</p>
-Foram criados os endpoints `[`POST /partner`], [`GET /partners`], [`DELETE /partner/{partner_id}`]`, com o intuito respectivamente de criar, acessar e deletar parceiros.
+Foram criados os endpoints [`POST /partner`], [`GET /partners`], [`DELETE /partner/{partner_id}`], com o intuito respectivamente de criar, acessar e deletar parceiros.
 
 ## :books: Bibliotecas utilizadas 
   <li>Axios</li>
